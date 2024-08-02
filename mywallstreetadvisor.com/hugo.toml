@@ -1,0 +1,10 @@
+baseURL = "http://mywallstreetadvisor.com/"
+languageCode = "en-us"
+title = "My WallStreet Advisor"
+theme = "dream"
+
+[params]
+  author = "AlirezaX2"
+  description = "My WallStreet Advisor"
+  github = "https://github.com/alirezax2"
+  
