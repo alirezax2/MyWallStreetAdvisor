@@ -6,8 +6,15 @@
     <description>Recent content in Category1 on My WallStreet Advisor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Aug 2024 10:31:44 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2024 15:45:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/category1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lumn</title>
+      <link>http://localhost:1313/posts/lumn/</link>
+      <pubDate>Fri, 02 Aug 2024 15:45:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/lumn/</guid>
+      <description>&lt;p&gt;Summary of Recent News of Lumen Company&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
