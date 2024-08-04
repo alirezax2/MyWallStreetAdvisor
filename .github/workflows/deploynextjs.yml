@@ -12,23 +12,29 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history for all branches and tags
 
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'  # Specify the Node.js version you need
+          node-version: '14'  # Specify the Node.js version you need
 
       - name: Install dependencies
         run: |
+          cd MyWallStreetAdvisor
           npm install
           # If using yarn, uncomment the line below and comment the line above
           # yarn install
+        shell: /usr/bin/bash -e {0}
 
       - name: Build Next.js application
         run: |
+          cd MyWallStreetAdvisor
           npm run build
           # If using yarn, uncomment the line below and comment the line above
           # yarn build
+        shell: /usr/bin/bash -e {0}
 
       - name: Next to GitHub Pages
         uses: ricardobiundo/NextPagesAction@1.0.2
@@ -40,5 +46,6 @@ jobs:
           gitname: ${{ secrets.GIT_NAME || 'CI' }}  # Optional, default is CI
           gitmsg: ${{ secrets.GIT_MSG || 'deploy' }}  # Optional, default is deploy
           cname: ${{ secrets.CNAME || '' }}  # Optional, default is none
-          useyarn: false  # Optional, set to true if using yarn
-
+          useyarn: true  # Optional, set to true if using yarn
+        env:
+          BUILD_DIR: MyWallStreetAdvisor  # Set the build directory for the action if needed
