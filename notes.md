@@ -15,4 +15,5 @@ npm install --save-dev gh-pages
 package.js
 config.js
 npm run deploy
-
+ 
+ 
