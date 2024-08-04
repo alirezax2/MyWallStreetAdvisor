@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           ls
-          cd MyWallStreetAdvisor
+          cd mywallstreetadvisor
           npm install
           # If using yarn, uncomment the line below and comment the line above
           # yarn install
