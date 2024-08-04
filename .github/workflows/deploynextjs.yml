@@ -16,12 +16,13 @@ jobs:
           fetch-depth: 0  # Fetch all history for all branches and tags
 
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'  # Specify the Node.js version you need
+          node-version: '20'  # Specify the Node.js version you need
 
       - name: Install dependencies
         run: |
+          ls
           cd MyWallStreetAdvisor
           npm install
           # If using yarn, uncomment the line below and comment the line above
