@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Next.js application
         run: |
-          cd MyWallStreetAdvisor
+          cd mywallstreetadvisor
           npm run build
           # If using yarn, uncomment the line below and comment the line above
           # yarn build
@@ -49,4 +49,4 @@ jobs:
           cname: ${{ secrets.CNAME || '' }}  # Optional, default is none
           useyarn: true  # Optional, set to true if using yarn
         env:
-          BUILD_DIR: MyWallStreetAdvisor  # Set the build directory for the action if needed
+          BUILD_DIR: mywallstreetadvisor  # Set the build directory for the action if needed
