@@ -12,7 +12,32 @@ yarn dev
 
 
 npm install --save-dev gh-pages
-package.js
+
+
+Update package.json:
+```
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "export": "next export",
+  "deploy": "npm run build && npm run export && gh-pages -d out -b gh-pages"
+}
+```
+
+ add a next.config.js
+```
+module.exports = {
+  assetPrefix: './',
+  basePath: '/<repository-name>',
+  trailingSlash: true,
+}
+
+```
+
+
+
+
 config.js
 npm run deploy
  
